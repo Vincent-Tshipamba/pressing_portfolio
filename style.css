@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #082BCB;
+}
+
+.container {
+    max-width: 1200px; /* Réduit la largeur maximale du conteneur */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #2599FB;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 40px;
+    font-size: 1.5em;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #FEF503;
+    color: #082BCB;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 0px 0 20px; /* Adjusted for fixed header */
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 35px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+#slider {
+    width: 100%; /* Slider prend toute la largeur */
+    margin: 0; /* Supprime les marges pour le slider */
+    height: 700px;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover; /* Assure que les images remplissent le slider */
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-bottom: 50px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; /* Common height for images */
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-content img {
+    width: 200px;
+    height: 200px; /* Common size for logo */
+    object-fit: contain;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: 150px; /* Common height for team images */
+    object-fit: cover;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content form label {
+    margin-top: 10px;
+}
+
+.contact-content form input,
+.contact-content form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-content form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #082BCB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-content img {
+    width: 40%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    margin: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #FEF503;
+    text-decoration: none;
+}
+
+.visible {
+    opacity: 1;
+}
