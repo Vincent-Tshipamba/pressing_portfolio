@@ -74,9 +74,24 @@ section {
 }
 
 #slider {
+    background-color: #AAD9F9;
+    position: relative;
     width: 100%; /* Slider prend toute la largeur */
     margin: 0; /* Supprime les marges pour le slider */
     height: 700px;
+}
+
+.slider-text {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10;
 }
 
 .slider {
@@ -235,4 +250,53 @@ footer {
 
 .visible {
     opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        display: none;
+        /* Masque les liens de navigation */
+    }
+
+    .cta-button {
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content img {
+        margin-top: 20px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content form,
+    .contact-content img {
+        width: 100%;
+    }
+
+    .card-container,
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .team-member {
+        width: 80%;
+    }
 }
